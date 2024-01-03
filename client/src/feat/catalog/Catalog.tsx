@@ -1,28 +1,36 @@
 import { useEffect, useState } from "react";
 import { Product } from "../../app/models/product";
 import ProductList from "./ProductList";
-
+import agent from "../../app/api/agent";
+import LoadingComponent from "../../app/layout/LoadingComponent";
 
 export default function Catalog() {
-    const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/Products')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
+    agent.Catalog.list()
+      .then((products) => {
+        console.log("Fetched products:", products);
+        if (!Array.isArray(products)) {
+          console.error("Fetched data is not an array:", products);
+          return;
         }
-        return response.json();
+        setProducts(products);
       })
-      .then(data => setProducts(data))
-      .catch(error => console.error('Fetch error:', error));
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      })
+      .finally(() => setLoading(false));
   }, []);
+  
 
- 
-    return (
-        <>
-            <ProductList products={products}/>
-            
-        </>
-    ) 
+  if (loading) return <LoadingComponent message='Loading products...'/>
+
+  return (
+    <>
+      <ProductList products={products}/>
+    </>
+  );
 }
