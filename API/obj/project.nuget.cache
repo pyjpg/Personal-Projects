@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kWLP/8cP5/2uQR/ZfENyiEIgMCaomiTlCbuUYrKjTSylviVZbJBp2mR3w2vIpsFxyHDexHo1Tqq127FMTlnBhw==",
+  "dgSpecHash": "ocVuf3w/AUsSM19/mUUkKdM12+6ZSZDKbr6uET1lbzboyBXR9qb/uc6NjwiVIQfPJslVOSUl8BwfzWAkG4vzOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\titas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\titas\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",

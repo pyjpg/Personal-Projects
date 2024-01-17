@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\API\\API.csproj": {}
+    "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\API\\API.csproj": {
+    "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\API\\API.csproj",
+        "projectPath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\api\\API.csproj",
         "packagesPath": "C:\\Users\\titas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\API\\obj\\",
+        "outputPath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\titas\\AppData\\Roaming\\NuGet\\NuGet.Config"
