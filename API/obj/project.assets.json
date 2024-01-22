@@ -2980,19 +2980,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\api\\API.csproj",
+      "projectUniqueName": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\api\\API.csproj",
+      "projectPath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\API\\API.csproj",
       "packagesPath": "C:\\Users\\titas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\api\\obj\\",
+      "outputPath": "C:\\Users\\titas\\Desktop\\EStore\\Personal-Projects\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\titas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\titas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
