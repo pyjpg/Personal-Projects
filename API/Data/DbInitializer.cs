@@ -7,7 +7,8 @@ namespace API.Data
     {
         public static async Task Initilize(StoreContext context, UserManager<User> userManager)
         {
-            if (!userManager.Users.Any())
+
+            if (!userManager.Users.Any(u => u.UserName == "bob"))
             {
                 var user = new User
                 {
@@ -15,8 +16,17 @@ namespace API.Data
                     Email = "bob@test.com"
                 };
 
-                await userManager.CreateAsync(user, "%a$$w0rd");
-                await userManager.AddToRoleAsync(user, "Member");
+                var result = await userManager.CreateAsync(user, "Pr!nceCh@rm1ng");
+
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(user, "Member");
+                }
+                else
+                {
+                    // Handle user creation failure
+                    throw new Exception($"Failed to create user: {string.Join(", ", result.Errors.Select(e => e.Description))}");
+                }
 
                 var admin = new User
                 {
@@ -28,7 +38,6 @@ namespace API.Data
                 await userManager.AddToRolesAsync(admin, new[] { "Member", "Admin" });
 
             }
-
             if (context.Products.Any()) return;
 
             var products = new List<Product>
@@ -235,6 +244,7 @@ namespace API.Data
             {
                 context.Products.Add(product);
             }
+           
 
             context.SaveChanges();
         }

@@ -19,7 +19,7 @@ export default function ProductCard({product} : Props) {
 
   
      return (
-        <Card >
+        <Card>
             <CardHeader
                 avatar={
                     <Avatar sx={{bgcolor: 'secondary.main'}}>

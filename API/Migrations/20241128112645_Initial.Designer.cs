@@ -11,14 +11,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240306202639_DropAllTables")]
-    partial class DropAllTables
+    [Migration("20241128112645_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.2");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.3");
 
             modelBuilder.Entity("API.Entities.Basket", b =>
                 {
@@ -182,13 +182,13 @@ namespace API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2f3c5d14-ee85-4b52-b8c7-ea85fcb5ede3",
+                            Id = "f987b909-1c53-4e78-b8ba-6f350db2d6e6",
                             Name = "Member",
                             NormalizedName = "MEMBER"
                         },
                         new
                         {
-                            Id = "32d2ec77-cc97-42a6-befd-dd1fad76e9c4",
+                            Id = "b89ed2ff-1f61-4d37-b276-6220119f7154",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

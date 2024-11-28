@@ -57,6 +57,7 @@ var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
 try
 {
     await context.Database.MigrateAsync();
+    await Task.Delay(TimeSpan.FromSeconds(1));
     await DbInitializer.Initilize(context, userManager);
 }
 catch (Exception ex)

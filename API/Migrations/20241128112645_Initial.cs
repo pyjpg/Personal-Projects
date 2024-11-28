@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace API.Migrations
 {
     /// <inheritdoc />
-    public partial class DropAllTables : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -222,8 +222,8 @@ namespace API.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "2f3c5d14-ee85-4b52-b8c7-ea85fcb5ede3", null, "Member", "MEMBER" },
-                    { "32d2ec77-cc97-42a6-befd-dd1fad76e9c4", null, "Admin", "ADMIN" }
+                    { "b89ed2ff-1f61-4d37-b276-6220119f7154", null, "Admin", "ADMIN" },
+                    { "f987b909-1c53-4e78-b8ba-6f350db2d6e6", null, "Member", "MEMBER" }
                 });
 
             migrationBuilder.CreateIndex(

@@ -6,7 +6,7 @@ interface Props {
     selectedValue:string;
 }
 
-export default function RadioButtonGroup({options,onChange,selectedValue}: Props) {
+export default function RadioButtonGroup({options,onChange, selectedValue}: Props) {
     return (
         <FormControl component="fieldset">
             <RadioGroup onChange={onChange} value={selectedValue}>
